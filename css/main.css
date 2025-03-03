@@ -1,0 +1,62 @@
+
+body{
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color:#F6F5E0;
+  }
+
+h1, h2, h3, h4, p, a{
+    margin-top:0;
+}
+
+p{
+  color: #000;
+  font-family: Onest;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 121.174%; /* 1.51469rem */
+  letter-spacing: 0.175rem;
+}
+
+h1{
+  color: #000;
+  font-family: Onest;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.174%; /* 3.63525rem */
+  letter-spacing: 0.42rem;
+}
+
+h2{
+  color: #000;
+  font-family: Onest;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 204%; /* 4.59rem */
+}
+
+h3{
+  color: #000;
+  font-family: Onest;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h4{
+font-family: Onest;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+img{
+  height:auto;
+  max-width:100%;
+}
