@@ -29,10 +29,17 @@ a.non-active {
   padding: 1rem 2rem;
   border-radius: 2rem;
   margin: 0.2rem;
+  border: 2px solid transparent;
 }
 
 a.active {
   background: #f2bbd7;
+  border: 2px solid #f2bbd7;
+}
+
+a.non-active:hover {
+  background: transparent;
+  border: 2px solid orangered;
 }
 
 p {
@@ -102,10 +109,11 @@ nav {
 }
 
 .hero-area {
-  padding: 1rem;
   min-height: 60vh;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .top-border {
@@ -113,7 +121,6 @@ nav {
 }
 .bottom-border {
   border-bottom: 2px solid #111;
-  margin-bottom: 2rem;
 }
 
 .flourish-1 {
@@ -127,13 +134,18 @@ nav {
   width: 40%;
 }
 
-.fish-logo {
+.job-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 15rem;
 }
 
 .bio {
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
+  background: orangered;
   width: 60%;
 }
 .about-area {
