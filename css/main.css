@@ -144,3 +144,27 @@ footer {
   min-height: 100vh;
   background: lightblue;
 }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navigation {
+    flex-direction: row;
+  }
+  body {
+    background: blue;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background: green;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  body {
+    background: lemonchiffon;
+  }
+}
