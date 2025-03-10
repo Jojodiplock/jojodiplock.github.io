@@ -1,14 +1,24 @@
 @import url(reset.css);
+
+/* apply a natural box layout model to all elements, but allowing components to change */
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Onest", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: #f6f5e0;
-  padding: 1rem;
 }
+
+/* Hyperlink Styles */
 
 a {
   text-decoration: none;
@@ -43,15 +53,7 @@ a.non-active:hover {
   border: 2px solid #f2bbd7;
 }
 
-p {
-  color: #000;
-  font-family: Onest;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 121.174%; /* 1.51469rem */
-  letter-spacing: 0.175rem;
-}
+/*Typography Styles */
 
 h1 {
   color: #000;
@@ -61,6 +63,12 @@ h1 {
   font-weight: 700;
   line-height: 121.174%; /* 3.63525rem */
   letter-spacing: 0.42rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -89,10 +97,24 @@ h4 {
   line-height: normal;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
+p {
+  color: #000;
+  font-family: Onest;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 121.174%; /* 1.51469rem */
+  letter-spacing: 0.175rem;
 }
+
+/* Image Styles */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Structural Template Layout Styles */
 
 header {
   text-align: center;
@@ -118,76 +140,29 @@ header {
   margin-bottom: 1rem;
 }
 
-header h1 {
-  font-size: 3rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
 nav {
   padding: 1.5rem;
   font-size: 0.8125rem;
 }
 
 .hero-area {
-  min-height: 30vh;
+  border: 2px solid blue;
+}
+.hero-area,
+.about-section {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.top-border {
-  border-top: 2px solid black;
-}
-.bottom-border {
-  border-bottom: 2px solid #111;
-}
-
-.flourish-1 {
-  display: flex;
-  flex-direction: row;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-}
-
-.flourish-2 {
-  display: flex;
-  flex-direction: row;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-}
-
-.flourish-3 {
-  display: flex;
-  flex-direction: row;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  width: 11.375rem;
-  height: 13.9375rem;
 }
 
 .home-work-content {
   display: flex;
-  flex-direction: row;
-
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 100%;
 }
 
 .job-title-wrapper {
@@ -199,12 +174,24 @@ nav {
 }
 
 .maps-main-image-home {
+  display: flex;
+  flex-direction: row;
   border-radius: 1.25rem;
   border-width: 46.5rem;
-  background: #e6e6e6;
-  width: 46.09494rem;
-  height: 26rem;
-  flex-shrink: 0;
+
+  width: 100%;
+  padding: 1rem;
+}
+
+.project-image {
+  width: 50%;
+
+  padding: 1rem;
+}
+.project-case-study {
+  width: 50%;
+
+  padding: 1rem;
 }
 
 .maps-main-image-work {
@@ -213,40 +200,76 @@ nav {
   background: #e6e6e6;
   width: 46.09494rem;
   height: 26rem;
-  flex-shrink: 0;
 }
+
+/* Aesthetic Styles */
+/* Border lines, Rounded corners and Flourish Styles */
+
+.top-border {
+  border-top: 2px solid black;
+}
+.bottom-border {
+  border-bottom: 2px solid #111;
+}
+
+.rounded-corners {
+  border-radius: 1rem;
+}
+
+.flourish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  border: 2px solid red;
+}
+
+/* About Page Styles */
 
 .bio {
   display: flex;
-  flex-direction: column;
+  flex: 1;
   width: 60%;
+  border: 5px solid green;
+  padding: 1rem;
 }
 
-.about-area {
-  display: flex;
-  flex-direction: column;
-  width: 66%;
+.about-section {
+}
+.about-photo,
+.more-about {
+  width: 50%;
 }
 
-.about-area {
-  min-height: 100vh;
+.more-about {
+  padding: 3rem;
 }
+/* Footer Styles */
 
 footer {
-  min-height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
   background: #1d3a28;
+  padding: 1rem;
+}
+.footer-main-content-area {
+  width: 85%;
+}
+
+.socials {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footer-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.socials {
-  display: flex;
-  flex-direction: row;
-  float: right;
   justify-content: center;
 }
 
