@@ -129,6 +129,7 @@ header {
   font-size: 3rem;
   margin-top: 5rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .work-my-work {
@@ -164,6 +165,15 @@ nav {
   padding: 0 1rem;
 }
 
+.hero-area-2 {
+  min-height: 60vh;
+  flex-direction: row;
+  padding: 0 1rem;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
 .home-work-content {
   display: flex;
   flex-direction: column;
@@ -177,7 +187,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  min-height: 15rem;
+  min-height: 10rem;
 }
 
 .maps-main-image-home {
@@ -197,8 +207,11 @@ nav {
 }
 .project-case-study {
   width: 50%;
+  padding: 2rem;
+}
 
-  padding: 1rem;
+a.case-study-link {
+  color: #e780b5;
 }
 
 .maps-main-image-work {
