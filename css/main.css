@@ -123,6 +123,7 @@ header {
 
 .home-my-work {
   text-align: center;
+  background: salmon;
 }
 
 .home-my-work h1 {
@@ -167,11 +168,15 @@ nav {
 
 .hero-area-2 {
   min-height: 60vh;
-  flex-direction: row;
+  flex-direction: column;
   padding: 0 1rem;
-  width: 60%;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: url(../img/background-1.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
 }
 
 .home-work-content {
