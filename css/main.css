@@ -75,6 +75,7 @@ p {
 
 .light {
   color: #f6f5e0;
+  padding: 1rem;
 }
 
 /* Hyperlink Styles */
@@ -119,7 +120,6 @@ a.non-active:hover {
   background: transparent;
   border: 2px solid #f2bbd7;
 }
-
 /* Image Styles */
 
 img {
@@ -242,9 +242,8 @@ nav {
 
 .full-width-section,
 .full-width-section-alternate {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  border: 3px solid red;
   min-height: 50vh;
   padding: 3rem;
   display: flex;
@@ -254,13 +253,10 @@ nav {
   text-align: center;
   justify-content: center;
 }
-.full-width-section-alternate {
-  background: orangered;
-}
 
 .full-width-text-rounded-corners {
   background: #1d3a28;
-  width: 80%;
+  width: 90%;
   padding: 3rem;
   border-radius: 1.25rem;
   margin: 0 auto;
@@ -291,17 +287,16 @@ nav {
 }
 .grid-item {
   width: 50%;
-  border: 2px solid yellow;
   text-align: center;
   padding: 2rem;
 }
 
 .summary {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  width: 90%;
+  padding: 2rem;
 }
 
 .two-column-container {
@@ -343,7 +338,6 @@ nav {
 
 .flourish {
   width: 30%;
-  background: lightgoldenrodyellow;
 }
 
 /* About Page Styles */
