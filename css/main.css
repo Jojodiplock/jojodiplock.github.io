@@ -249,6 +249,43 @@ nav {
   display: flex;
   flex-direction: column;
 }
+
+.full-width-section-alternate {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.maps-summary {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.mockup-background {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.opportunity {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .full-width-section {
   text-align: center;
   justify-content: center;
@@ -295,7 +332,11 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  padding: 2rem;
+}
+
+.maps-problem {
   padding: 2rem;
 }
 
@@ -397,8 +438,39 @@ footer h2 {
   .navigation {
     flex-direction: row;
   }
-  body {
-    background: blue;
+  .maps-main-image-home {
+    flex-direction: row;
+  }
+  .project-image {
+    width: 50%;
+  }
+  .hero-area {
+    flex-direction: row;
+  }
+  .hero-area-2 {
+  }
+
+  .h1 {
+    font-size: 1.25rem;
+  }
+  .h2 {
+    font-size: 0.8rem;
+  }
+  .h3 {
+    font-size: 0.8rem;
+  }
+  .h4 {
+    font-size: 0.8rem;
+  }
+  .p {
+    font-size: 0.6rem;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navigation {
+    flex-direction: row;
   }
   .maps-main-image-home {
     flex-direction: row;
@@ -406,18 +478,59 @@ footer h2 {
   .project-image {
     width: 50%;
   }
-}
+  .hero-area {
+    flex-direction: row;
+  }
+  .hero-area-2 {
+  }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  body {
-    background: green;
+  .h1 {
+    font-size: 1.25rem;
+  }
+  .h2 {
+    font-size: 0.8rem;
+  }
+  .h3 {
+    font-size: 0.8rem;
+  }
+  .h4 {
+    font-size: 0.8rem;
+  }
+  .p {
+    font-size: 0.6rem;
   }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  body {
-    background: lemonchiffon;
+  .navigation {
+    flex-direction: row;
+  }
+  .maps-main-image-home {
+    flex-direction: row;
+  }
+  .project-image {
+    width: 50%;
+  }
+  .hero-area {
+    flex-direction: row;
+  }
+  .hero-area-2 {
+  }
+
+  .h1 {
+    font-size: 1.25rem;
+  }
+  .h2 {
+    font-size: 0.8rem;
+  }
+  .h3 {
+    font-size: 0.8rem;
+  }
+  .h4 {
+    font-size: 0.8rem;
+  }
+  .p {
+    font-size: 0.6rem;
   }
 }
