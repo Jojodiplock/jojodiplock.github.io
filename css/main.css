@@ -127,6 +127,16 @@ img {
   height: auto;
 }
 
+.main-citations {
+  padding-bottom: 5rem;
+}
+
+.main-citations p {
+  line-height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* Structural Template Layout Styles */
 
 header {
@@ -135,6 +145,10 @@ header {
 
 .home-my-work {
   text-align: center;
+}
+.home-my-work-2 {
+  text-align: center;
+  padding: 5rem;
 }
 
 .home-my-work h1 {
@@ -431,6 +445,23 @@ footer h1 {
 
 footer h2 {
   color: #f6f5e0;
+}
+
+.footer-links a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #e780b5;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 3rem;
+}
+
+.footer-link a:hover {
+  color: #f2bbd7;
 }
 
 /* Large devices (desktops, 992px and up) */
